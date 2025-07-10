@@ -1,5 +1,21 @@
 # api-seguridad
 --
+Esta API permite gestionar un sistema musical sencillo, donde puedes registrar artistas, crear álbumes y agregar canciones.
+La API está desarrollada en Node.js con Express y utiliza almacenamiento en memoria (no requiere base de datos).
+Recursos principales:
+
+-Artistas: Representan a los músicos o bandas.
+-Álbumes: Colecciones de canciones, cada uno pertenece a un artista.
+-Canciones: Piezas musicales individuales, cada una pertenece a un álbum y a un artista.
+
+¿Cómo se relacionan las colecciones?
+Un artista puede tener varios álbumes.
+Un álbum pertenece a un solo artista.
+Un álbum puede tener varias canciones.
+Cada canción pertenece a un solo álbum y a un solo artista.
+
+
+
 
 1. Registrar un artista
 POST /api/v1/artists/register
